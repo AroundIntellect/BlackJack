@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1152.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controllers.InGamePageController">
+    <children>
+        <ImageView fitHeight="768.0" fitWidth="1152.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Assets/image_in_game.png" />
+            </image>
+        </ImageView>
+      <TextField fx:id="betField" layoutX="30.0" layoutY="543.0" prefHeight="59.0" prefWidth="276.0" promptText="Enter your bet here" style="-fx-background-color: #fafafa; -fx-background-radius: 10; -fx-border-color: silver; -fx-border-radius: 10;">
+         <font>
+            <Font name="Jokerman" size="25.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Введите вашу ставку">
+               <font>
+                  <Font name="Gabriola" size="18.0" />
+               </font>
+            </Tooltip>
+         </tooltip>
+      </TextField>
+        <Label layoutX="5.0" layoutY="745.0" text="Version 1.0" textFill="#848383" />
+        <Label layoutX="5.0" layoutY="724.0" text="Created by Alexandr" textFill="#848383" />
+      <Label layoutX="832.0" layoutY="621.0" prefHeight="55.0" prefWidth="130.0" text="Money: " textFill="WHITE">
+         <font>
+            <Font name="Jokerman" size="33.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Количество денег, доступных для ставки">
+               <font>
+                  <Font name="Gabriola" size="18.0" />
+               </font>
+            </Tooltip>
+         </tooltip>
+      </Label>
+      <Label fx:id="moneyLabel" layoutX="965.0" layoutY="621.0" prefHeight="62.0" prefWidth="186.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="Jokerman" size="29.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Количество денег, доступных для ставки">
+               <font>
+                  <Font name="Gabriola" size="18.0" />
+               </font>
+            </Tooltip>
+         </tooltip>
+      </Label>
+      <Label layoutX="802.0" layoutY="668.0" prefHeight="41.0" prefWidth="158.0" text="Your bid:" textFill="WHITE">
+         <font>
+            <Font name="Jokerman" size="33.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Ваша ставка">
+               <font>
+                  <Font name="Gabriola" size="18.0" />
+               </font>
+            </Tooltip>
+         </tooltip>
+      </Label>
+      <Label fx:id="betLabel" layoutX="965.0" layoutY="668.0" prefHeight="62.0" prefWidth="185.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="Jokerman" size="29.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Ваша ставка">
+               <font>
+                  <Font name="Gabriola" size="18.0" />
+               </font>
+            </Tooltip>
+         </tooltip>
+      </Label>
+      <Label layoutX="15.0" layoutY="148.0" prefHeight="54.0" prefWidth="218.0" text="Dealer cards:" textFill="WHITE">
+         <font>
+            <Font name="Jokerman" size="33.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Карты дилера">
+               <font>
+                  <Font name="Gabriola" size="18.0" />
+               </font>
+            </Tooltip>
+         </tooltip>
+      </Label>
+      <ImageView fx:id="firstDealerCard" fitHeight="124.0" fitWidth="81.0" layoutX="15.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="secondDealerCard" fitHeight="124.0" fitWidth="81.0" layoutX="106.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="thridDealerCard" fitHeight="124.0" fitWidth="81.0" layoutX="197.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="fourthDealerCard" fitHeight="124.0" fitWidth="81.0" layoutX="288.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="fifthDealerCard" fitHeight="124.0" fitWidth="81.0" layoutX="379.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="sixthDealerCard" fitHeight="124.0" fitWidth="81.0" layoutX="470.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="seventhDealerCard" fitHeight="124.0" fitWidth="81.0" layoutX="561.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="eightDealerCard" fitHeight="124.0" fitWidth="81.0" layoutX="651.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="ninthDealerCard" fitHeight="124.0" fitWidth="81.0" layoutX="742.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="tenthDealerCard" fitHeight="124.0" fitWidth="81.0" layoutX="833.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="eleventhDealerCard" fitHeight="124.0" fitWidth="81.0" layoutX="924.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="15.0" layoutY="347.0" prefHeight="54.0" prefWidth="191.0" text="Your cards:" textFill="WHITE">
+         <font>
+            <Font name="Jokerman" size="33.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Ваши карты">
+               <font>
+                  <Font name="Gabriola" size="18.0" />
+               </font>
+            </Tooltip>
+         </tooltip>
+      </Label>
+      <ImageView fx:id="firstPlayerCard" fitHeight="124.0" fitWidth="81.0" layoutX="15.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="secondPlayerCard" fitHeight="124.0" fitWidth="81.0" layoutX="106.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="thridPlayerCard" fitHeight="124.0" fitWidth="81.0" layoutX="197.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="fourthPlayerCard" fitHeight="124.0" fitWidth="81.0" layoutX="288.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="fifthPlayerCard" fitHeight="124.0" fitWidth="81.0" layoutX="379.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="sixthPlayerCard" fitHeight="124.0" fitWidth="81.0" layoutX="470.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="seventhPlayerCard" fitHeight="124.0" fitWidth="81.0" layoutX="561.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="eightPlayerCard" fitHeight="124.0" fitWidth="81.0" layoutX="651.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="ninthPlayerCard" fitHeight="124.0" fitWidth="81.0" layoutX="742.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="tenthPlayerCard" fitHeight="124.0" fitWidth="81.0" layoutX="833.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="eleventhPlayerCard" fitHeight="124.0" fitWidth="81.0" layoutX="924.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="allDeckCards" fitHeight="161.0" fitWidth="108.0" layoutX="1025.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Assets/Cards/cards_back.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="makeBetButton" layoutX="96.0" layoutY="613.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="144.0" style="-fx-background-color: #bf9b28; -fx-background-radius: 10;" text="Make a bet">
+         <font>
+            <Font name="Jokerman" size="21.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Сделать ставку">
+               <font>
+                  <Font name="Gabriola" size="18.0" />
+               </font>
+            </Tooltip>
+         </tooltip>
+      </Button>
+      <Button fx:id="hitButton" disable="true" layoutX="397.0" layoutY="570.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="164.0" style="-fx-background-color: #bf9b28; -fx-background-radius: 10;" text="Hit">
+         <font>
+            <Font name="Jokerman" size="28.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Взять карту">
+               <font>
+                  <Font name="Gabriola" size="18.0" />
+               </font>
+            </Tooltip>
+         </tooltip>
+      </Button>
+      <Button fx:id="standButton" disable="true" layoutX="591.0" layoutY="570.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="164.0" style="-fx-background-color: #bf9b28; -fx-background-radius: 10;" text="Stand">
+         <font>
+            <Font name="Jokerman" size="28.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Остановиться">
+               <font>
+                  <Font name="Gabriola" size="18.0" />
+               </font>
+            </Tooltip>
+         </tooltip>
+      </Button>
+      <Button fx:id="doubleDownButton" disable="true" layoutX="494.0" layoutY="664.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="164.0" style="-fx-background-color: #bf9b28; -fx-background-radius: 10;" text="Double Down">
+         <font>
+            <Font name="Jokerman" size="21.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Удвоить ставку">
+               <font>
+                  <Font name="Gabriola" size="18.0" />
+               </font>
+            </Tooltip>
+         </tooltip>
+      </Button>
+      <Label layoutX="764.0" layoutY="709.0" prefHeight="57.0" prefWidth="191.0" text="Your score:" textFill="WHITE">
+         <font>
+            <Font name="Jokerman" size="33.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Ваш счёт">
+               <font>
+                  <Font name="Gabriola" size="18.0" />
+               </font>
+            </Tooltip>
+         </tooltip>
+      </Label>
+      <Label fx:id="scoreLabel" layoutX="966.0" layoutY="720.0" prefHeight="47.0" prefWidth="185.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="Jokerman" size="29.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Ваш счёт">
+               <font>
+                  <Font name="Gabriola" size="18.0" />
+               </font>
+            </Tooltip>
+         </tooltip>
+      </Label>
+      <Label fx:id="failLabel" alignment="CENTER" layoutY="65.0" prefHeight="54.0" prefWidth="1152.0" textFill="RED">
+         <font>
+            <Font name="Jokerman" size="29.0" />
+         </font>
+      </Label>
+      <Label fx:id="informationLabel" alignment="CENTER" layoutY="65.0" prefHeight="54.0" prefWidth="1152.0" textFill="WHITE">
+         <font>
+            <Font name="Jokerman" size="29.0" />
+         </font>
+      </Label>
+        <Button fx:id="outTheGameButton" mnemonicParsing="false" prefHeight="30.0" prefWidth="168.0" style="-fx-background-color: #bf9b28; -fx-background-radius: 10;" text="Out the game">
+            <font>
+                <Font name="Jokerman" size="21.0" />
+            </font>
+            <tooltip>
+                <Tooltip text="Выйти в главное меню">
+                    <font>
+                        <Font name="Gabriola" size="18.0" />
+                    </font>
+                </Tooltip>
+            </tooltip>
+        </Button>
+      <Label layoutX="296.0" layoutY="148.0" prefHeight="58.0" prefWidth="222.0" text="Dealer score:" textFill="WHITE">
+         <font>
+            <Font name="Jokerman" size="33.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Счёт дилера">
+               <font>
+                  <Font name="Gabriola" size="18.0" />
+               </font>
+            </Tooltip>
+         </tooltip>
+      </Label>
+      <Label fx:id="dealerScoreLabel" layoutX="527.0" layoutY="160.0" prefHeight="47.0" prefWidth="185.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="Jokerman" size="29.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Счёт дилера">
+               <font>
+                  <Font name="Gabriola" size="18.0" />
+               </font>
+            </Tooltip>
+         </tooltip>
+      </Label>
+      <Button fx:id="nextGameButton" disable="true" layoutX="96.0" layoutY="670.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="144.0" style="-fx-background-color: red; -fx-background-radius: 10;" text="Next game">
+         <font>
+            <Font name="Jokerman" size="21.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Начать новую партию">
+               <font>
+                  <Font name="Gabriola" size="18.0" />
+               </font>
+            </Tooltip>
+         </tooltip>
+      </Button>
+    </children>
+</AnchorPane>
